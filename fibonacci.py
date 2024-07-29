@@ -13,7 +13,8 @@ def main():
         else:
             print(f"{numero_digitado} não faz parte da sequencia Fibonacci")
     except ValueError:
-        print("número digitado não é inteiro.")
-
+        print("número digitado não é inteiro ou você digitou uma letra.")
+    except Exception as e:
+        print(f"Erro inesperado: {e}")
 
 main()
